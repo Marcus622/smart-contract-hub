@@ -42,11 +42,25 @@ Dieses Projekt adressiert ein alltägliches Problem: den Überblick über laufen
 - Terraform ≥ 1.5  
 - GitHub Account mit aktiviertem Actions-Zugriff
 
-### Lokales Setup
 
-```bash
-git clone https://github.com/dein-benutzername/smart-contract-hub.git
-cd smart-contract-hub
-npm install
-cp .env.example .env
-npm run dev
+👉 Setup-Anleitung: [docs/setup.md](docs/setup.md)
+
+smart-contract-hub/
+├── README.md                  # Projektzusammenfassung & Setup
+├── docs/
+│   ├── roadmap.md             # Roadmap mit Meilensteinen
+│   ├── tech-stack.md          # Finaler Tech-Stack
+│   ├── feature-checklist.md   # MVP-Funktionsübersicht
+│   ├── architecture.png       # Diagramm (visuell)
+│   └── swot.md                # SWOT-Analyse
+├── backend/
+│   ├── src/                   # Express/FastAPI Code
+│   ├── prisma/                # Datenbankmodell
+│   └── tests/                 # API-Tests
+├── frontend/
+│   ├── src/                   # React-Komponenten
+│   └── public/                # PWA-Assets
+├── infra/
+│   ├── terraform/             # AWS-Ressourcen
+│   └── github-actions/        # CI/CD Workflows
+└── .env.example               # Beispiel für Umgebungsvariablen
